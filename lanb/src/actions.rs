@@ -30,6 +30,7 @@ fn confirm<S: Display>(message: S) -> Result<bool> {
 fn check(link: &Filey, args: &Args) -> Result<()> {
     if link.exists() {
         if args.backup() {
+            let mut link = link.clone();
             let backup = link
                 .move_to(format!("{}{}", link, args.suffix()))
                 .map_err(|e| e.into())
