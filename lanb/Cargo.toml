@@ -1,6 +1,6 @@
 [package]
 name = "lanb"
-version = "0.1.0"
+version = "0.1.1"
 description = "Create symbolic links and hard links."
 authors.workspace = true
 license.workspace = true
