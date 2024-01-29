@@ -229,12 +229,12 @@ pub fn list(wrm_config_dir: &String) -> Result<()> {
     if file_list.files().is_empty() {
         eprintln!("There are no files or directories in trash");
     } else {
-        draw(&file_list)?;
+        draw_list(&file_list)?;
     }
     Ok(())
 }
 
-fn draw(file_list: &FileList) -> Result<()> {
+fn draw_list(file_list: &FileList) -> Result<()> {
     for i in file_list.files() {
         println!("{}", colorize(i.path_trash(), i.path())?);
     }
