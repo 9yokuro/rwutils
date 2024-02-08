@@ -8,8 +8,6 @@ use clap::{error::ErrorKind, Command, Parser};
 /// wrm
 ///
 /// A file deletion utility
-/// If you do not use the option --delete,
-/// file will be moved to trash($HOME/.config/wrm/trash) by default.
 #[derive(Debug, Parser)]
 #[clap(name = env!("CARGO_PKG_NAME"), version = env!("CARGO_PKG_VERSION"), author = env!("CARGO_PKG_AUTHORS"), about = env!("CARGO_PKG_DESCRIPTION"), arg_required_else_help = true, verbatim_doc_comment)]
 struct Args {
