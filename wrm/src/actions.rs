@@ -4,7 +4,7 @@ use crate::{
     Result,
 };
 use colored::Colorize;
-use filey::{create, remove, Error::GetFileNameError, FileTypes, Filey};
+use filey::{create_dir, remove, Error::GetFileNameError, FileTypes, Filey};
 use std::{
     fmt::Display,
     io::{stdin, stdout, Write},
@@ -118,7 +118,7 @@ pub fn clean(wrm_config_dir: &String, noninteractive: bool, quiet: bool) -> Resu
             ),
         )? {
             remove!(wrm_config_dir);
-            create!(FileTypes::Directory, wrm_config_dir);
+            create_dir!(wrm_config_dir);
             show_message(quiet, format!("{} trash", "Cleaned".green().bold()));
         } else {
             show_message(quiet, "Canceled");
@@ -288,7 +288,7 @@ fn check(wrm_config_dir: &String) -> Result<()> {
 fn absolutize<P: AsRef<Path>>(path: P) -> Result<Filey> {
     let mut temp = Filey::new(path);
     Ok(temp
-        .absolutized()
+        .absolutize()
         .map_err(|e| e.into())
         .map_err(WrmError)?
         .clone())
