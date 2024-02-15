@@ -7,7 +7,6 @@ Run the following Cargo command:
 ```console
 cargo install wmk
 ```
-Or download prebuilt binary from the [GitHub release page](https://github.com/p1486/wmk/releases)
 
 ## Usage
 To create files:
