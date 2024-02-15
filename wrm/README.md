@@ -46,3 +46,6 @@ wrm --clean
 
 ## License
 This project is licensed under the MIT License and the Apache-2.0.
+
+## TODO
+- add autoclean
