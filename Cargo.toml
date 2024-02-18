@@ -6,7 +6,7 @@ members = [
 ]
 
 [workspace.package]
-authors = ["p1486 xzstd099@protonmail.com"]
+authors = ["9yokuro xzstd099@protonmail.com"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/p1486/rwutils.git"
 edition = "2021"
