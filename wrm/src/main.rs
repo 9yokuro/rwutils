@@ -1,6 +1,10 @@
 // wrm
 //
 // wrm is a file deletion utility.
+//
+// TODO
+// refactore all
+// change log messages
 mod actions;
 mod argparse;
 mod file_list;
