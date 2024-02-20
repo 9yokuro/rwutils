@@ -1,11 +1,13 @@
 [package]
 name = "wrm"
-version = "0.1.5"
-description = "A file deletion utility."
+version = "0.2.0"
+description = "Remove files or directories."
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
 edition.workspace = true
+keywords = ["cli"]
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
